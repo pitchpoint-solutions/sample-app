@@ -3,6 +3,8 @@ apiVersion: apps/v1
 metadata:
   name: sample-frontend-production
 spec:
+  selector:
+    app: sample-frontend-production
   replicas: 4
   template:
     metadata:

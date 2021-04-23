@@ -3,6 +3,8 @@ apiVersion: apps/v1
 metadata:
   name: sample-frontend-canary
 spec:
+  selector:
+    app: sample-frontend-canary
   replicas: 1
   template:
     metadata:
